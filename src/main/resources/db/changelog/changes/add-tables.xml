@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+    <!-- Create BusRoute Table -->
+    <changeSet id="tbl_busroute" author="thilinam">
+        <createTable tableName="BusRoute">
+            <column name="routeID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="origin" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="destination" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="DECIMAL(10, 2)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- Create index on origin and destination columns -->
+        <createIndex indexName="idx_busroute_origin" tableName="BusRoute">
+            <column name="origin"/>
+        </createIndex>
+        <createIndex indexName="idx_busroute_destination" tableName="BusRoute">
+            <column name="destination"/>
+        </createIndex>
+    </changeSet>
+
+    <!-- Create Journey Table -->
+    <changeSet id="tbl_journey" author="thilinam">
+        <createTable tableName="Journey">
+            <column name="journeyID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="origin" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="destination" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="DECIMAL(10, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="routeID" type="VARCHAR(255)">
+                <constraints nullable="false" foreignKeyName="fk_journey_busroute" references="BusRoute(routeID)"/>
+            </column>
+        </createTable>
+
+        <!-- Create index on routeID column -->
+        <createIndex indexName="idx_journey_routeID" tableName="Journey">
+            <column name="routeID"/>
+        </createIndex>
+    </changeSet>
+
+    <!-- Create Seat Table -->
+    <changeSet id="tbl_seat" author="thilinam">
+        <createTable tableName="Seat">
+            <column name="seatID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="seatNumber" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="isAvailable" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="journeyID" type="VARCHAR(255)">
+                <constraints nullable="false" foreignKeyName="fk_seat_journey" references="Journey(journeyID)"/>
+            </column>
+        </createTable>
+
+        <!-- Create index on journeyID column -->
+        <createIndex indexName="idx_seat_journeyID" tableName="Seat">
+            <column name="journeyID"/>
+        </createIndex>
+    </changeSet>
+
+    <!-- Create Passenger Table -->
+    <changeSet id="tbl_passenger" author="thilinam">
+        <createTable tableName="Passenger">
+            <column name="passengerID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contact" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- Create index on contact column -->
+        <createIndex indexName="idx_passenger_contact" tableName="Passenger">
+            <column name="contact"/>
+        </createIndex>
+    </changeSet>
+    <!-- Create Reservation Table -->
+    <changeSet id="tbl_reservation" author="thilinam">
+        <createTable tableName="Reservation">
+            <column name="reservationID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="totalPrice" type="DECIMAL(10, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="passengerID" type="VARCHAR(255)">
+                <constraints nullable="false" foreignKeyName="fk_reservation_passenger" references="Passenger(passengerID)"/>
+            </column>
+            <column name="journeyID" type="VARCHAR(255)">
+                <constraints nullable="false" foreignKeyName="fk_reservation_journey" references="Journey(journeyID)"/>
+            </column>
+        </createTable>
+
+        <!-- Create index on passengerID and journeyID columns -->
+        <createIndex indexName="idx_reservation_passengerID" tableName="Reservation">
+            <column name="passengerID"/>
+        </createIndex>
+        <createIndex indexName="idx_reservation_journeyID" tableName="Reservation">
+            <column name="journeyID"/>
+        </createIndex>
+    </changeSet>
+
+    <!-- Create Reservation_Seat Mapping Table -->
+    <changeSet id="tbl_reservation_seat" author="thilinam">
+        <createTable tableName="Reservation_Seat">
+            <column name="reservationID" type="VARCHAR(255)">
+                <constraints nullable="false" foreignKeyName="fk_reservation_seat_reservation" references="Reservation(reservationID)"/>
+            </column>
+            <column name="seatID" type="VARCHAR(255)">
+                <constraints nullable="false" foreignKeyName="fk_reservation_seat_seat" references="Seat(seatID)"/>
+            </column>
+        </createTable>
+
+        <!-- Create combined index for faster lookup -->
+        <createIndex indexName="idx_reservation_seat" tableName="Reservation_Seat">
+            <column name="reservationID"/>
+            <column name="seatID"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

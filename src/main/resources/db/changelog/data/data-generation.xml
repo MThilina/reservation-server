@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <!-- Insert Sample Data into BusRoute Table -->
+    <changeSet id="data_busroute" author="thilinam">
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route1"/>
+            <column name="origin" value="CityA"/>
+            <column name="destination" value="CityB"/>
+            <column name="price" value="50.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route2"/>
+            <column name="origin" value="CityB"/>
+            <column name="destination" value="CityC"/>
+            <column name="price" value="30.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route3"/>
+            <column name="origin" value="CityC"/>
+            <column name="destination" value="CityD"/>
+            <column name="price" value="40.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route4"/>
+            <column name="origin" value="CityD"/>
+            <column name="destination" value="CityE"/>
+            <column name="price" value="60.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route5"/>
+            <column name="origin" value="CityE"/>
+            <column name="destination" value="CityF"/>
+            <column name="price" value="70.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route6"/>
+            <column name="origin" value="CityF"/>
+            <column name="destination" value="CityG"/>
+            <column name="price" value="80.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route7"/>
+            <column name="origin" value="CityG"/>
+            <column name="destination" value="CityH"/>
+            <column name="price" value="90.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route8"/>
+            <column name="origin" value="CityH"/>
+            <column name="destination" value="CityI"/>
+            <column name="price" value="100.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route9"/>
+            <column name="origin" value="CityI"/>
+            <column name="destination" value="CityJ"/>
+            <column name="price" value="110.00"/>
+        </insert>
+        <insert tableName="BusRoute">
+            <column name="routeID" value="route10"/>
+            <column name="origin" value="CityJ"/>
+            <column name="destination" value="CityK"/>
+            <column name="price" value="120.00"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert Sample Data into Journey Table -->
+    <changeSet id="data_journey" author="thilinam">
+        <insert tableName="Journey">
+            <column name="journeyID" value="journey1"/>
+            <column name="origin" value="CityA"/>
+            <column name="destination" value="CityB"/>
+            <column name="date" valueDate="2024-01-01"/>
+            <column name="price" valueNumeric="50.00"/>
+            <column name="routeID" value="route1"/>
+        </insert>
+        <insert tableName="Journey">
+            <column name="journeyID" value="journey2"/>
+            <column name="origin" value="CityB"/>
+            <column name="destination" value="CityC"/>
+            <column name="date" valueDate="2024-01-02"/>
+            <column name="price" valueNumeric="30.00"/>
+            <column name="routeID" value="route2"/>
+        </insert>
+        <insert tableName="Journey">
+            <column name="journeyID" value="journey3"/>
+            <column name="origin" value="CityC"/>
+            <column name="destination" value="CityD"/>
+            <column name="date" valueDate="2024-01-03"/>
+            <column name="price" valueNumeric="40.00"/>
+            <column name="routeID" value="route3"/>
+        </insert>
+        <!-- Additional rows up to 10 records -->
+    </changeSet>
+
+    <!-- Insert Sample Data into Seat Table -->
+    <changeSet id="data_seat" author="thilinam">
+        <insert tableName="Seat">
+            <column name="seatID" value="seat1"/>
+            <column name="seatNumber" value="A1"/>
+            <column name="isAvailable" valueBoolean="true"/>
+            <column name="journeyID" value="journey1"/>
+        </insert>
+        <insert tableName="Seat">
+            <column name="seatID" value="seat2"/>
+            <column name="seatNumber" value="A2"/>
+            <column name="isAvailable" valueBoolean="true"/>
+            <column name="journeyID" value="journey1"/>
+        </insert>
+        <insert tableName="Seat">
+            <column name="seatID" value="seat3"/>
+            <column name="seatNumber" value="B1"/>
+            <column name="isAvailable" valueBoolean="true"/>
+            <column name="journeyID" value="journey2"/>
+        </insert>
+        <!-- Additional rows up to 10 records -->
+    </changeSet>
+
+    <!-- Insert Sample Data into Passenger Table -->
+    <changeSet id="data_passenger" author="thilinam">
+        <insert tableName="Passenger">
+            <column name="passengerID" value="passenger1"/>
+            <column name="name" value="John Doe"/>
+            <column name="contact" value="1234567890"/>
+        </insert>
+        <insert tableName="Passenger">
+            <column name="passengerID" value="passenger2"/>
+            <column name="name" value="Jane Doe"/>
+            <column name="contact" value="0987654321"/>
+        </insert>
+        <insert tableName="Passenger">
+            <column name="passengerID" value="passenger3"/>
+            <column name="name" value="Alice Smith"/>
+            <column name="contact" value="1122334455"/>
+        </insert>
+        <!-- Additional rows up to 10 records -->
+    </changeSet>
+
+    <!-- Insert Sample Data into Reservation Table -->
+    <changeSet id="data_reservation" author="thilinam">
+        <insert tableName="Reservation">
+            <column name="reservationID" value="reservation1"/>
+            <column name="totalPrice" valueNumeric="50.00"/>
+            <column name="passengerID" value="passenger1"/>
+            <column name="journeyID" value="journey1"/>
+        </insert>
+        <insert tableName="Reservation">
+            <column name="reservationID" value="reservation2"/>
+            <column name="totalPrice" valueNumeric="30.00"/>
+            <column name="passengerID" value="passenger2"/>
+            <column name="journeyID" value="journey2"/>
+        </insert>
+        <insert tableName="Reservation">
+            <column name="reservationID" value="reservation3"/>
+            <column name="totalPrice" valueNumeric="40.00"/>
+            <column name="passengerID" value="passenger3"/>
+            <column name="journeyID" value="journey3"/>
+        </insert>
+        <!-- Additional rows up to 10 records -->
+    </changeSet>
+
+    <!-- Insert Sample Data into Reservation_Seat Mapping Table -->
+    <changeSet id="data_reservation_seat" author="thilinam">
+        <insert tableName="Reservation_Seat">
+            <column name="reservationID" value="reservation1"/>
+            <column name="seatID" value="seat1"/>
+        </insert>
+        <insert tableName="Reservation_Seat">
+            <column name="reservationID" value="reservation2"/>
+            <column name="seatID" value="seat3"/>
+        </insert>
+        <insert tableName="Reservation_Seat">
+            <column name="reservationID" value="reservation3"/>
+            <column name="seatID" value="seat2"/>
+        </insert>
+        <!-- Additional rows up to 10 records -->
+    </changeSet>
+
+</databaseChangeLog>

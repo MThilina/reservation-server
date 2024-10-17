@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9072e29-abaf-4c46-ab13-e78429231e4b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JvmLoggingSettingsStorage">
+    <option name="loggerId" value="Slf4j" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nTR3kikMSQ9rAzW2gvgAA8ESsU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AvailabilityServletTest.doGet_ShouldReturnAvailableSeats_WhenSeatsAreAvailable.executor": "Run",
+    "JUnit.AvailabilityServletTest.doGet_ShouldReturnBadRequest_WhenOriginOrDestinationMissing.executor": "Run",
+    "JUnit.AvailabilityServletTest.doGet_ShouldRollbackTransaction_WhenDatabaseErrorOccurs.executor": "Run",
+    "JUnit.AvailabilityServletTest.executor": "Run",
+    "JUnit.ReservationServiceTest.executor": "Run",
+    "JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable.executor": "Run",
+    "JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldThrowException_WhenDatabaseErrorOccurs.executor": "Debug",
+    "JUnit.ReservationServiceTest.reserveSeat_ShouldThrowError_WhenSeatIsNoLongerAvailable.executor": "Run",
+    "JUnit.ReservationServletTest.doPost_ShouldReturnReservationResponse_WhenReservationIsSuccessful.executor": "Run",
+    "JUnit.ReservationServletTest.executor": "Run",
+    "Maven.reservation-server [clean].executor": "Run",
+    "Maven.reservation-server [compile].executor": "Run",
+    "Maven.reservation-server [deploy].executor": "Run",
+    "Maven.reservation-server [install].executor": "Run",
+    "Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:rollbackOneUpdate].executor": "Run",
+    "Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:rollback].executor": "Run",
+    "Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:update].executor": "Run",
+    "Maven.reservation-server [package].executor": "Run",
+    "Maven.reservation-server [test].executor": "Run",
+    "Maven.reservation-server [validate].executor": "Run",
+    "Maven.reservation-server [verify].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/thilinam/programming/reservation-server",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "promo.profiler"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.enactor.endpoint" />
+      <recent name="com.enactor.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable">
+    <configuration name="AvailabilityServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reservation-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enactor.endpoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.enactor.endpoint" />
+      <option name="MAIN_CLASS_NAME" value="com.enactor.endpoint.AvailabilityServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reservation-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enactor.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.enactor.service" />
+      <option name="MAIN_CLASS_NAME" value="com.enactor.service.ReservationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reservation-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enactor.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.enactor.service" />
+      <option name="MAIN_CLASS_NAME" value="com.enactor.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reservation-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enactor.endpoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.enactor.endpoint" />
+      <option name="MAIN_CLASS_NAME" value="com.enactor.endpoint.ReservationServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServletTest.doPost_ShouldReturnReservationResponse_WhenReservationIsSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reservation-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enactor.endpoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.enactor.endpoint" />
+      <option name="MAIN_CLASS_NAME" value="com.enactor.endpoint.ReservationServletTest" />
+      <option name="METHOD_NAME" value="doPost_ShouldReturnReservationResponse_WhenReservationIsSuccessful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable" />
+        <item itemvalue="JUnit.ReservationServiceTest" />
+        <item itemvalue="JUnit.ReservationServletTest" />
+        <item itemvalue="JUnit.ReservationServletTest.doPost_ShouldReturnReservationResponse_WhenReservationIsSuccessful" />
+        <item itemvalue="JUnit.AvailabilityServletTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9072e29-abaf-4c46-ab13-e78429231e4b" name="Changes" comment="" />
+      <created>1728994885433</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728994885433</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enactor/service/ReservationServiceTest.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/enactor/service/ReservationService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enactor/endpoint/AvailabilityServletTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enactor/endpoint/ReservationServletTest.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enactor/endpoint/ReservationServletTest.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
