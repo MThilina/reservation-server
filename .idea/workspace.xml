@@ -37,44 +37,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "JUnit.AvailabilityServletTest.doGet_ShouldReturnAvailableSeats_WhenSeatsAreAvailable.executor": "Run",
-    "JUnit.AvailabilityServletTest.doGet_ShouldReturnBadRequest_WhenOriginOrDestinationMissing.executor": "Run",
-    "JUnit.AvailabilityServletTest.doGet_ShouldRollbackTransaction_WhenDatabaseErrorOccurs.executor": "Run",
-    "JUnit.AvailabilityServletTest.executor": "Run",
-    "JUnit.ReservationServiceTest.executor": "Run",
-    "JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable.executor": "Run",
-    "JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldThrowException_WhenDatabaseErrorOccurs.executor": "Debug",
-    "JUnit.ReservationServiceTest.reserveSeat_ShouldThrowError_WhenSeatIsNoLongerAvailable.executor": "Run",
-    "JUnit.ReservationServletTest.doPost_ShouldReturnReservationResponse_WhenReservationIsSuccessful.executor": "Run",
-    "JUnit.ReservationServletTest.executor": "Run",
-    "Maven.reservation-server [clean].executor": "Run",
-    "Maven.reservation-server [compile].executor": "Run",
-    "Maven.reservation-server [deploy].executor": "Run",
-    "Maven.reservation-server [install].executor": "Run",
-    "Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:rollbackOneUpdate].executor": "Run",
-    "Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:rollback].executor": "Run",
-    "Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:update].executor": "Run",
-    "Maven.reservation-server [package].executor": "Run",
-    "Maven.reservation-server [test].executor": "Run",
-    "Maven.reservation-server [validate].executor": "Run",
-    "Maven.reservation-server [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/thilinam/programming/reservation-server",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "promo.profiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AvailabilityServletTest.doGet_ShouldReturnAvailableSeats_WhenSeatsAreAvailable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AvailabilityServletTest.doGet_ShouldReturnBadRequest_WhenOriginOrDestinationMissing.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AvailabilityServletTest.doGet_ShouldRollbackTransaction_WhenDatabaseErrorOccurs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AvailabilityServletTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldReturnAvailableSeats_WhenSeatsAreAvailable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServiceTest.getAvailableSeatsByOriginAndDestination_ShouldThrowException_WhenDatabaseErrorOccurs.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ReservationServiceTest.reserveSeat_ShouldThrowError_WhenSeatIsNoLongerAvailable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServletTest.doPost_ShouldReturnReservationResponse_WhenReservationIsSuccessful.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServletTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:rollbackOneUpdate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:rollback].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [org.liquibase:liquibase-maven-plugin:4.8.0:update].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reservation-server [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/thilinam/programming/reservation-server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;promo.profiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
